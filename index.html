@@ -4,56 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>محمود عبدالكريم - CV</title>
-
-  <!-- ربط ملف CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>محمود عبدالكريم</h1>
+<header>
+  <h1>محمود عبدالكريم</h1>
+  <p>مطور برمجيات طموح وشغوف ببناء حلول تقنية مبتكرة</p>
 
-    <!-- الصورة الشخصية -->
-    <img
-      class="profile-image"
-      src="C:\Users\msr\OneDrive\Desktop\personal\photo_2025-12-24_13-08-16.jpg"
-      alt="الصورة الشخصية لمحمود عبدالكريم"
-    >
+  <button id="darkModeBtn">الوضع الداكن</button>
+</header>
 
-    <p>مطور برمجيات طموح وشغوف ببناء حلول تقنية مبتكرة</p>
+<main>
 
-    <!-- زر الوضع الداكن -->
-    <button id="darkModeBtn">الوضع الداكن</button>
-  </header>
-
-  <main>
-    <section>
-      <h2>نبذة عني</h2>
+  <!-- نبذة -->
+  <section class="accordion">
+    <h2 class="accordion-title">نبذة عني</h2>
+    <div class="accordion-content">
       <p>
         أنا محمود عبدالكريم، طالب هندسة حاسوب مهتم بتطوير الويب
-        والتقنيات الحديثة، وأسعى دائماً لتحويل الأفكار إلى حلول رقمية.
+        والتقنيات الحديثة.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>المهارات</h2>
+  <!-- مهارات -->
+  <section class="accordion">
+    <h2 class="accordion-title">المهارات (اضغط على المهارة)</h2>
+    <div class="accordion-content">
       <ul class="skills-list">
         <li>HTML5 & CSS3</li>
         <li>JavaScript</li>
         <li>Responsive Design</li>
-        <li>إدارة قواعد البيانات</li>
+        <li>قواعد البيانات</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>اتصل بي</h2>
-      <p>البريد الإلكتروني: mahoodabdalkareem2@gmail.com</p>
-    </section>
-  </main>
+  <!-- تواصل -->
+  <section class="accordion">
+    <h2 class="accordion-title">اتصل بي</h2>
+    <div class="accordion-content">
+      <p id="email" class="copy-email">
+        mahoodabdalkareem2@gmail.com
+      </p>
+      <small>اضغط لنسخ الإيميل</small>
+    </div>
+  </section>
 
-  <!-- ربط ملف JavaScript -->
-  <script src="jcript.js"></script>
+</main>
 
+<script src="jcript.js"></script>
 </body>
 </html>
